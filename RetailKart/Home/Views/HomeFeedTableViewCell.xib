@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="HomeFeedTableViewCell" selectionStyle="default" indentationWidth="10" rowHeight="328" id="KGk-i7-Jjw" customClass="HomeFeedTableViewCell" customModule="RetailKart" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="328"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="327.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="No image" translatesAutoresizingMaskIntoConstraints="NO" id="wEW-ow-JWf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="255.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aw7-ra-QUl">
+                        <rect key="frame" x="8" y="263.5" width="304" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="J3H-lX-zQG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gu-sI-Vuv">
+                        <rect key="frame" x="8" y="296.5" width="304" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="MCe-3t-ZZF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Aw7-ra-QUl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="2Zr-wf-q3B"/>
+                    <constraint firstItem="Aw7-ra-QUl" firstAttribute="top" secondItem="wEW-ow-JWf" secondAttribute="bottom" constant="8" id="GOa-WZ-XQO"/>
+                    <constraint firstItem="8gu-sI-Vuv" firstAttribute="trailing" secondItem="Aw7-ra-QUl" secondAttribute="trailing" id="Gol-Gi-7jb"/>
+                    <constraint firstAttribute="bottom" secondItem="8gu-sI-Vuv" secondAttribute="bottom" constant="16" id="HV0-4l-85F"/>
+                    <constraint firstItem="wEW-ow-JWf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="IH3-SC-k4O"/>
+                    <constraint firstAttribute="trailing" secondItem="wEW-ow-JWf" secondAttribute="trailing" id="Kjw-jP-poT"/>
+                    <constraint firstItem="8gu-sI-Vuv" firstAttribute="leading" secondItem="Aw7-ra-QUl" secondAttribute="leading" id="MLf-yx-duU"/>
+                    <constraint firstAttribute="trailing" secondItem="Aw7-ra-QUl" secondAttribute="trailing" constant="8" id="Na5-qD-RNI"/>
+                    <constraint firstItem="8gu-sI-Vuv" firstAttribute="top" secondItem="Aw7-ra-QUl" secondAttribute="bottom" constant="8" id="ngz-Wb-xvm"/>
+                    <constraint firstItem="wEW-ow-JWf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tpm-hc-f3I"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="feedImageView" destination="wEW-ow-JWf" id="cUT-WT-CTP"/>
+                <outlet property="feedPriceLabel" destination="8gu-sI-Vuv" id="XVq-Qo-fYm"/>
+                <outlet property="feedTitleLabel" destination="Aw7-ra-QUl" id="O8T-pU-0hY"/>
+            </connections>
+            <point key="canvasLocation" x="-352" y="127"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="No image" width="275" height="183"/>
+    </resources>
+</document>
